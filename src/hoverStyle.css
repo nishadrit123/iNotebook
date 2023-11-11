@@ -1,0 +1,29 @@
+#myButton {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#infoBox {
+    display: none;
+    position: absolute;
+    top: 10;
+    left: 300px;
+    width: 163px;
+    height: 58px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#infoBox h2 {font-size: 15px; margin: 0;}
+#infoBox p {font-size: 13px;}
+
+#myButton:hover + #infoBox {
+    display: block;
+    margin-left: 10px;
+}
